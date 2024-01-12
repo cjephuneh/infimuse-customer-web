@@ -13,9 +13,9 @@ export default function Home() {
             Create. <br />
             Inspire.
           </h1>
-          <p className="text-2xl font-light w-8/12 tracking-widest">
-            Explore, Grow and Connect by attending various learning experience
-            around you.
+          <p className="text-xl font-light w-8/12 tracking-widest">
+            Explore, Grow and Connect by <br /> attending various learning{" "}
+            <br /> experience around you.
           </p>
           <Link
             href={"/"}
@@ -33,9 +33,9 @@ export default function Home() {
               <p className="text-white text-center leading-6">
                 <span className="text-sm font-light">Over</span>
                 <br />
-                <span className="text-4xl font-extrabold">1K+</span>
+                <span className="text-4xl font-extrabold">500K+</span>
                 <br />
-                <span className="text-sm font-light">students</span>
+                <span className="text-sm font-light">courses</span>
               </p>
             </div>
             <Image
@@ -58,18 +58,56 @@ export default function Home() {
               <p className="text-white text-center leading-6">
                 <span className="text-sm font-light">Over</span>
                 <br />
-                <span className="text-4xl font-extrabold">1K+</span>
+                <span className="text-4xl font-extrabold">10K+</span>
                 <br />
-                <span className="text-sm font-light">students</span>
+                <span className="text-sm font-light">students learning</span>
               </p>
             </div>
           </div>
         </div>
       </div>
       {/* next section */}
-      <div className="flex">
-        <div></div>
-        <div></div>
+      <div className="flex container mx-auto">
+        <div className="relative w-1/2">
+          <Image
+            src={"/image_3.jpg"}
+            alt="Third image"
+            width={200}
+            height={200}
+            className="rounded-full"
+          />
+          <Image
+            src={"/image_6.jpg"}
+            alt="Third image"
+            width={200}
+            height={200}
+            className="absolute left-96 top-1/2 -translate-x-1/2 -translate-y-1/2 rounded-full"
+          />
+          <Image
+            src={"/image_7.jpg"}
+            alt="Third image"
+            width={200}
+            height={200}
+            className="rounded-full"
+          />
+          <Image
+            src={"/image_8.jpg"}
+            alt="Third image"
+            width={200}
+            height={200}
+            className="rounded-full"
+          />
+        </div>
+        <div className="flex flex-col justify-center items-center space-y-5 w-1/2">
+          <h1 className="text-5xl font-bold">Classes.</h1>
+          <p className="text-xl font-light tracking-widest">
+            A single day interactive, <br />
+            group classes making learning <br />
+            and exploring something new, <br />
+            a fun and entertaing <br />
+            experience.
+          </p>
+        </div>
       </div>
     </main>
   );
