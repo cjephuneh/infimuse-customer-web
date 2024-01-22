@@ -1,12 +1,11 @@
 import Image from "next/image";
-import Api from "./components/Api";
 import Link from "next/link";
 import { FaArrowRight } from "react-icons/fa";
 
 export default function Home() {
   return (
     <main className="">
-      <div className="h-screen container mx-auto flex">
+      <div className="min-h-screen container mx-auto flex">
         <div className="w-1/2 flex flex-col justify-center items-start space-y-10">
           <h1 className="text-6xl font-bold">
             Explore. <br />
