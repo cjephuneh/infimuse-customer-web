@@ -5,12 +5,12 @@ import { FaArrowRight } from "react-icons/fa";
 export default function Home() {
   return (
     <main className="">
-      <div className="bg-gradient-to-bl from-green-100 ">
+      <div className="bg-gradient-to-bl from-green-100 rounded-b-2xl">
         <div className="min-h-screen container mx-auto flex justify-center items-center space-x-10">
           <div className="w-1/2 flex flex-col justify-center items-start space-y-10 pt-4">
-            <h1 className="text-6xl font-bold">
+            <h1 className="text-6xl font-bold ">
               Explore. <br />
-              Create. <br />
+              <p className="border-2">Create.</p>
               Inspire.
             </h1>
             <p className="text-lg font-light w-8/12 tracking-widest">
@@ -68,37 +68,13 @@ export default function Home() {
         </div>
       </div>
 
-      {/* next section */}
-      <div className="flex container mx-auto">
+      {/* 2nd section */}
+      <div className="flex justify-center items-center space-x-10 container mx-auto">
         <div className="relative w-1/2">
-          <Image
-            src={"/image_3.jpg"}
-            alt="Third image"
-            width={200}
-            height={200}
-            className="rounded-full"
-          />
-          <Image
-            src={"/image_6.jpg"}
-            alt="Third image"
-            width={200}
-            height={200}
-            className="absolute left-96 top-1/2 -translate-x-1/2 -translate-y-1/2 rounded-full"
-          />
-          <Image
-            src={"/image_7.jpg"}
-            alt="Third image"
-            width={200}
-            height={200}
-            className="rounded-full"
-          />
-          <Image
-            src={"/image_8.jpg"}
-            alt="Third image"
-            width={200}
-            height={200}
-            className="rounded-full"
-          />
+          <div className="image-3 rounded-full w-40 h-40"></div>
+          <div className="image-6 rounded-full w-80 h-80"></div>
+          <div className="image-7 rounded-full w-20 h-20"></div>
+          <div className="image-8 rounded-full w-60 h-60"></div>
         </div>
         <div className="flex flex-col justify-center items-center space-y-5 w-1/2">
           <h1 className="text-5xl font-bold">Classes.</h1>
@@ -109,6 +85,15 @@ export default function Home() {
             a fun and entertaing <br />
             experience.
           </p>
+        </div>
+      </div>
+
+      {/* 3rd section */}
+      <div className="flex justify-center items-center space-x-10 container mx-auto">
+        <div className="flex flex-col justify-center items-center space-y-5 w-1/2">
+          <h1 className="text-5xl font-bold">
+            Workshops <br /> & Packages.
+          </h1>
         </div>
       </div>
     </main>
