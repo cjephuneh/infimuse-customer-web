@@ -70,11 +70,15 @@ export default function Home() {
 
       {/* 2nd section */}
       <div className="flex justify-center items-center space-x-10 container mx-auto">
-        <div className="relative w-1/2">
-          <div className="image-3 rounded-full w-40 h-40"></div>
-          <div className="image-6 rounded-full w-80 h-80"></div>
-          <div className="image-7 rounded-full w-20 h-20"></div>
-          <div className="image-8 rounded-full w-60 h-60"></div>
+        <div className="flex space-x-5 w-1/2">
+          <div className="flex flex-col space-y-10">
+            <div className="image-3 rounded-full w-40 h-40"></div>
+            <div className="image-6 rounded-full w-52 h-52"></div>
+          </div>
+          <div className="flex flex-col space-y-5">
+            <div className="image-7 rounded-full w-20 h-20"></div>
+            <div className="image-8 rounded-full w-56 h-56"></div>
+          </div>
         </div>
         <div className="flex flex-col justify-center items-center space-y-5 w-1/2">
           <h1 className="text-5xl font-bold">Classes.</h1>
