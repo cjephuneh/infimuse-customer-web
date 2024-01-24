@@ -1,6 +1,10 @@
 import Image from "next/image";
 import Link from "next/link";
 import { FaArrowRight } from "react-icons/fa";
+import { LuMusic } from "react-icons/lu";
+import { IoIosFitness } from "react-icons/io";
+import { HiOutlinePaintBrush } from "react-icons/hi2";
+import { HiOutlineAcademicCap } from "react-icons/hi";
 
 export default function Home() {
   return (
@@ -68,8 +72,8 @@ export default function Home() {
         </div>
       </div>
 
-      {/* 2nd section */}
-      <div className="flex justify-center items-center space-x-10 container mx-auto">
+      {/* 2nd section  (classes)*/}
+      <div className="mb-10 flex justify-center items-center space-x-10 container mx-auto">
         <div className="flex space-x-5 w-1/2">
           <div className="flex flex-col space-y-10">
             <div className="image-3 rounded-full w-40 h-40"></div>
@@ -92,12 +96,72 @@ export default function Home() {
         </div>
       </div>
 
-      {/* 3rd section */}
-      <div className="flex justify-center items-center space-x-10 container mx-auto">
-        <div className="flex flex-col justify-center items-center space-y-5 w-1/2">
+      {/* 3rd section (workshop & packages) */}
+      <div className="mb-10 flex flex-row-reverse justify-center items-center space-x-10 container mx-auto">
+        <div className="relative w-1/2 flex flex-col justify-center items-center space-y-3">
+          <Image
+            src={"/packages/image_9.jpg"}
+            width={175}
+            height={200}
+            alt="image_9"
+            className="rounded-xl"
+          />
+          <Image
+            src={"/packages/image_10.jpg"}
+            width={175}
+            height={200}
+            alt="image_9"
+            className="rounded-xl z-10 ring-8 ring-white"
+          />
+          <Image
+            src={"/packages/image_11.jpg"}
+            width={175}
+            height={200}
+            alt="image_9"
+            className="absolute left-72 rounded-xl ring-8 ring-white"
+          />
+        </div>
+        <div className="flex flex-col justify-center items-start space-y-5 w-1/2">
           <h1 className="text-5xl font-bold">
             Workshops <br /> & Packages.
           </h1>
+          <p className="text-xl font-light tracking-widest">
+            Grow and develope your skillset with multiple interactive classes
+            spanned over a few weeks while interacting with cool people to
+            learn, grow and connect with.
+          </p>
+        </div>
+      </div>
+      {/* 4th section (top categories) */}
+      <div className="mb-10 flex flex-col justify-center items-center space-x-10 container mx-auto space-y-5">
+        <h1 className="capitalize font-normal text-5xl text-center">
+          our top categories
+        </h1>
+        <div className="flex justify-center items-center space-x-10">
+          <div className="flex flex-col justify-center items-start space-y-5">
+            <div className="p-5 bg-gray-100 rounded-xl">
+              <LuMusic className="text-9xl font-semibold" />
+            </div>
+            <p className="font-bold text-2xl">Music</p>
+          </div>
+          <div className="flex flex-col justify-center items-start space-y-5">
+            <div className="p-5 bg-gray-100 rounded-xl">
+              <IoIosFitness className="text-9xl" />
+            </div>
+            <p className="font-bold text-2xl">Fitness</p>
+          </div>
+          <div className="flex flex-col justify-center items-start space-y-5">
+            <div className="p-5 bg-gray-100 rounded-xl">
+              <HiOutlinePaintBrush className="text-9xl" />
+            </div>
+            <p className="font-bold text-2xl">Art</p>
+          </div>
+          <div className="flex flex-col justify-center items-start space-y-5">
+            <div className="p-5 bg-gray-100 rounded-xl">
+              <HiOutlineAcademicCap className="text-9xl" />
+            </div>
+            <p className="font-bold text-2xl">Academics</p>
+          </div>
         </div>
       </div>
     </main>
