@@ -5,6 +5,9 @@ import { LuMusic } from "react-icons/lu";
 import { IoIosFitness } from "react-icons/io";
 import { HiOutlinePaintBrush } from "react-icons/hi2";
 import { HiOutlineAcademicCap } from "react-icons/hi";
+import Category from "./components/Category";
+import Locality from "./components/Locality";
+import FilterSection from "./components/FilterSection";
 
 export default function Home() {
   return (
@@ -164,6 +167,8 @@ export default function Home() {
           </div>
         </div>
       </div>
+      {/* 5th section (search section) */}
+      <FilterSection />
     </main>
   );
 }
