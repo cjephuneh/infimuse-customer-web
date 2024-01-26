@@ -53,3 +53,13 @@ body {
     )
     rgb(var(--background-start-rgb));
 }
+
+.course-image {
+  background-image: url("/packages/image_10.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 250px;
+  height: 180px;
+  border-radius: 10px;
+}
