@@ -6,9 +6,9 @@ import { PiStudentDuotone } from "react-icons/pi";
 
 const CourseCard = () => {
   return (
-    <div className="col-span-1 flex flex-col items-center bg-white rounded-lg shadow-lg pb-2">
+    <div className="col-span-1 flex flex-col items-center bg-white rounded-lg shadow-lg pb-2 space-y-3">
       <div className="course-image"></div>
-      <div className="flex justify-between items-center w-full mt-4 px-2">
+      <div className="flex justify-between items-center w-full px-2">
         <div className="flex justify-between items-center gap-2 px-2 py-1 rounded-lg bg-green-100 text-sm font-bold text-gray-600">
           <div className="w-2 h-2 rounded-full bg-green-500"></div>
           <p className="text-xs">web design</p>
@@ -27,6 +27,23 @@ const CourseCard = () => {
         <div className="flex justify-between items-center gap-2 text-sm">
           <PiStudentDuotone className="text-green-500" />
           <p>100 students</p>
+        </div>
+      </div>
+      <hr className="border w-full" />
+      <div className="flex justify-between items-center w-full px-2">
+        <p className="text-sm">Ksh.18999</p>
+        <div className="flex justify-between items-center gap-2 text-sm">
+          <div className="relative">
+            <Image
+              src="/avatars/avatar_1.jpg"
+              alt="avatar"
+              width={25}
+              height={25}
+              className="rounded-full"
+            />
+            <div className="h-2 w-2 rounded-full bg-green-500 absolute top-0 right-0"></div>
+          </div>
+          <p className="text-sm text-green-500">John Doe</p>
         </div>
       </div>
     </div>
