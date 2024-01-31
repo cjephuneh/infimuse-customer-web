@@ -22,7 +22,7 @@ const FilterSection = () => {
       <div className="w-10/12 flex flex-col space-y-5">
         {/* search bar */}
         <div>
-          <form className="flex border-4 border-blue-500 rounded-md">
+          <form className="flex w-3/4 border-4 border-blue-500 rounded-md">
             <input
               className="w-full p-3 focus:outline-none"
               type="search"
