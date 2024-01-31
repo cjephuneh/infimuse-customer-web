@@ -7,7 +7,9 @@ const NavBar = () => {
     <nav className="absolute top-0 z-50 w-full flex justify-between items-center py-5">
       <div className="container mx-auto flex justify-between items-center">
         <div>
-          <h1>Infimus</h1>
+          <Link href="/">
+            <h1>Infimus</h1>
+          </Link>
         </div>
         <ul className="flex space-x-10">
           <li>

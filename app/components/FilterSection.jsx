@@ -5,6 +5,8 @@ import PriceRange from "./PriceRange";
 import Capacity from "./Capacity";
 import CourseCard from "./CourseCard";
 
+import FilterTag from "./FilterTags";
+
 const FilterSection = () => {
   return (
     <div className="mb-10 flex justify-center space-x-20 container mx-auto">
@@ -17,10 +19,37 @@ const FilterSection = () => {
         <hr className="border border-black" />
         <Capacity />
       </div>
-      {/* cards to be rendered here */}
       <div className="w-10/12 flex flex-col space-y-5">
-        <div>Search bar</div>
-        <div>badges of selected filters</div>
+        {/* search bar */}
+        <div>
+          <form className="flex border-4 border-blue-500 rounded-md">
+            <input
+              className="w-full p-3 focus:outline-none"
+              type="search"
+              name="search"
+              placeholder="Search"
+              id=""
+            />
+            <button
+              className="bg-blue-500 text-white p-2 rounded-l-none rounded-sm px-8 hover:bg-blue-600"
+              // type="submit"
+              value="Search"
+            >
+              Search
+            </button>
+          </form>
+        </div>
+        {/* filter tags here */}
+        <div className="flex flex-wrap space-x-4">
+          <FilterTag />
+          <FilterTag />
+          <FilterTag />
+          <FilterTag />
+          <FilterTag />
+          <button className="text-blue-500">Clear all Filters</button>
+        </div>
+
+        {/* cards to be rendered here */}
         <div className="grid grid-cols-3 gap-5">
           <CourseCard />
           <CourseCard />
