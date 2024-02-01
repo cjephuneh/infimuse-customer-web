@@ -1,7 +1,13 @@
-import React from "react";
+"use client";
+import CourseContent from "@/app/components/CourseContent";
+import Host from "@/app/components/Host";
+import Overview from "@/app/components/Overview";
+import Reviews from "@/app/components/Reviews";
+import React, { useState } from "react";
 import { FaRegStar, FaLongArrowAltRight } from "react-icons/fa";
 
 const PackageDetails = () => {
+  const [active, setActive] = useState("overview");
   return (
     <div className="mt-20 container mx-auto relative">
       <div className="background-image-detail-page w-full h-[200px] flex items-center pt-3 pb-10 rounded-t-xl">
@@ -38,7 +44,45 @@ const PackageDetails = () => {
           <FaLongArrowAltRight />
         </button>
       </div>
-      <div>details about class</div>
+      <nav className="flex items-center space-x-5 mt-10 mb-5">
+        <button
+          onClick={() => setActive("overview")}
+          className={`px-5 pb-3 ${
+            active === "overview" && "border-green-500 border-b-2"
+          }`}
+        >
+          Overview
+        </button>
+        <button
+          onClick={() => setActive("course content")}
+          className={`px-5 pb-3 ${
+            active === "course content" && "border-green-500 border-b-2"
+          }`}
+        >
+          Course content
+        </button>
+        <button
+          onClick={() => setActive("host")}
+          className={`px-5 pb-3 ${
+            active === "host" && "border-green-500 border-b-2"
+          }`}
+        >
+          Host
+        </button>
+        <button
+          onClick={() => setActive("reviews")}
+          className={`px-5 pb-3 ${
+            active === "reviews" && "border-green-500 border-b-2"
+          }`}
+        >
+          Reviews
+        </button>
+      </nav>
+      {/* overview */}
+      {active === "overview" && <Overview />}
+      {active === "course content" && <CourseContent />}
+      {active === "host" && <Host />}
+      {active === "reviews" && <Reviews />}
     </div>
   );
 };
