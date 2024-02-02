@@ -44,6 +44,9 @@ const PackageDetails = () => {
           <FaLongArrowAltRight />
         </button>
       </div>
+      {/* end of floating card */}
+
+      {/* nav */}
       <nav className="flex items-center space-x-5 mt-10 mb-5">
         <button
           onClick={() => setActive("overview")}
