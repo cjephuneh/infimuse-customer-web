@@ -31,7 +31,7 @@ const PackageDetails = () => {
         </div>
       </div>
       {/* floating card */}
-      <div className="md:w-[320px] rounded-xl absolute top-10 right-14 bg-white p-5 shadow-lg">
+      <div className="md:w-[320px] rounded-xl absolute top-14 right-14 bg-white p-5 shadow-lg">
         <Video
           src="https://www.youtube.com/watch?v=dQw4w9WgXcQ"
           className="rounded-xl"
