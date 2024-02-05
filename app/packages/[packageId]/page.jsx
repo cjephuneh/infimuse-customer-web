@@ -13,7 +13,7 @@ const PackageDetails = () => {
   const [active, setActive] = useState("overview");
   return (
     <div className="mt-20 container mx-auto relative">
-      <div className="background-image-detail-page w-full h-[200px] flex items-center pt-3 pb-10 rounded-t-xl">
+      <div className="background-image-detail-page w-full h-[250px] flex items-center pt-3 pb-10 rounded-t-xl">
         <div className="w-2/3 px-5 space-y-2 text-white">
           <h1 className="text-xl font-bold">Marketing course</h1>
           <p>
