@@ -15,7 +15,7 @@ export default function Home() {
           <div className="w-1/2 flex flex-col justify-center items-start space-y-10 pt-4">
             <h1 className="text-6xl font-bold ">
               Explore. <br />
-              <p className="border-2">Create.</p>
+              <p>Create.</p>
               Inspire.
             </h1>
             <p className="text-lg font-light w-8/12 tracking-widest">
@@ -24,7 +24,7 @@ export default function Home() {
             </p>
             <Link
               href={"/"}
-              className="flex justify-center items-center space-x-3 px-5 py-3 bg-green-500 text-white rounded-md"
+              className="flex justify-center items-center space-x-3 px-5 py-3 bg-green-500 hover:bg-green-600 transition-all duration-300 ease-in-out text-white rounded-md"
             >
               <p>Explore coures</p>
               <p className="">
