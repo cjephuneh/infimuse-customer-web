@@ -11,7 +11,7 @@ export default function Home() {
   return (
     <main className="">
       <div className="bg-gradient-to-bl from-green-100 rounded-b-2xl">
-        <div className="min-h-[90vh] container mx-auto flex flex-col-reverse md:flex-row md:flex justify-center items-center space-x-10">
+        <div className="min-h-[90vh] container mx-auto flex flex-col-reverse md:flex-row md:flex justify-center items-center md:space-x-10">
           <div className="w-full md:w-1/2 flex flex-col justify-center items-start space-y-10 pt-4">
             <div className="w-full text-center md:text-left">
               <h1 className="text-6xl font-bold w-full">Explore.</h1>
@@ -37,16 +37,16 @@ export default function Home() {
             </div>
           </div>
           {/* visual section */}
-          <div className="w-1/2 flex flex-col justify-center items-center space-y-4">
+          <div className="w-full md:w-1/2 flex flex-col justify-center items-center space-y-4">
             <div className="flex gap-4">
-              <div className="w-52 h-52 bg-red-500 rounded-full flex items-center justify-center">
-                <p className="text-white text-center leading-6">
+              <div className="w-32 h-32 sm:w-52 sm:h-52 bg-red-500 rounded-full flex items-center justify-center">
+                <div className="text-white text-center leading-6">
                   <span className="text-sm font-light">Over</span>
                   <br />
                   <span className="text-4xl font-extrabold">500K+</span>
                   <br />
                   <span className="text-sm font-light">courses</span>
-                </p>
+                </div>
               </div>
               <Image
                 src={"/image_1.jpg"}
@@ -64,13 +64,15 @@ export default function Home() {
                 height={200}
                 className="rounded-lg"
               />
-              <div className="w-52 h-52 bg-green-500 rounded-full flex items-center justify-center">
+              <div className="w-32 h-32 sm:w-52 sm:h-52 bg-green-500 rounded-full flex items-center justify-center">
                 <p className="text-white text-center leading-6">
                   <span className="text-sm font-light">Over</span>
                   <br />
                   <span className="text-4xl font-extrabold">10K+</span>
                   <br />
-                  <span className="text-sm font-light">students learning</span>
+                  <span className="text-xs sm:text-sm font-light">
+                    students learning
+                  </span>
                 </p>
               </div>
             </div>
