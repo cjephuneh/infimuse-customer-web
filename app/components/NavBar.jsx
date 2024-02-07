@@ -15,33 +15,32 @@ const NavBar = () => {
         </div>
         <ul className="flex space-x-10">
           <li>
-            <Link href="/">Home</Link>
+            <Link href="/">Become a host</Link>
           </li>
           <li>
-            <Link href="/">Courses</Link>
-          </li>
-          <li>
-            <Link href="/">Features</Link>
+            <Link href="/">Packages</Link>
           </li>
           <li>
             <BsCart3 className="text-xl" />
           </li>
-          <li>
-            <Link
-              href="/login"
-              className="border border-green-600 hover:bg-green-600 hover:text-white px-4 py-2 rounded-md"
-            >
-              Login
-            </Link>
-          </li>
-          <li>
-            <Link
-              href="/signup"
-              className="bg-blue-500 hover:bg-blue-600 text-white px-4 py-2 rounded-md"
-            >
-              Sign up
-            </Link>
-          </li>
+          <div className="flex space-x-3 items-center justify-center">
+            <li>
+              <Link
+                href="/login"
+                className="border border-green-600 hover:bg-green-600 hover:text-white px-4 py-2 rounded-md"
+              >
+                Login
+              </Link>
+            </li>
+            <li>
+              <Link
+                href="/signup"
+                className="bg-blue-500 hover:bg-blue-600 text-white px-4 py-2 rounded-md"
+              >
+                Sign up
+              </Link>
+            </li>
+          </div>
         </ul>
       </div>
       <div className="container mx-auto flex md:hidden justify-between items-center py-5">

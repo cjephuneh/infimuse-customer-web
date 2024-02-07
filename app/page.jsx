@@ -11,27 +11,32 @@ export default function Home() {
   return (
     <main className="">
       <div className="bg-gradient-to-bl from-green-100 rounded-b-2xl">
-        <div className="min-h-[90vh] container mx-auto flex justify-center items-center space-x-10">
-          <div className="w-1/2 flex flex-col justify-center items-start space-y-10 pt-4">
-            <h1 className="text-6xl font-bold ">
-              Explore. <br />
-              <p>Create.</p>
-              Inspire.
-            </h1>
-            <p className="text-lg font-light w-8/12 tracking-widest">
+        <div className="min-h-[90vh] container mx-auto flex flex-col-reverse md:flex-row md:flex justify-center items-center space-x-10">
+          <div className="w-full md:w-1/2 flex flex-col justify-center items-start space-y-10 pt-4">
+            <div className="w-full text-center md:text-left">
+              <h1 className="text-6xl font-bold w-full">Explore.</h1>
+              <h1 className="text-6xl text-red-500 font-bold w-full md:text-center md:pl-24">
+                Create.
+              </h1>
+              <h1 className="text-6xl font-bold w-full">Inspire.</h1>
+            </div>
+            <p className="text-lg font-light w-full text-center md:text-left md:w-8/12 tracking-widest">
               Explore, Grow and Connect by <br /> attending various learning{" "}
               <br /> experience around you.
             </p>
-            <Link
-              href={"/"}
-              className="flex justify-center items-center space-x-3 px-5 py-3 bg-green-500 hover:bg-green-600 text-white rounded-md"
-            >
-              <p>Explore coures</p>
-              <p className="">
-                <FaArrowRight />
-              </p>
-            </Link>
+            <div className="w-full flex justify-center md:justify-start">
+              <Link
+                href={"/"}
+                className="flex justify-center items-center w-fit space-x-3 px-5 py-3 bg-green-500 hover:bg-green-600 text-white rounded-md"
+              >
+                <span>Explore coures</span>
+                <span className="">
+                  <FaArrowRight />
+                </span>
+              </Link>
+            </div>
           </div>
+          {/* visual section */}
           <div className="w-1/2 flex flex-col justify-center items-center space-y-4">
             <div className="flex gap-4">
               <div className="w-52 h-52 bg-red-500 rounded-full flex items-center justify-center">
