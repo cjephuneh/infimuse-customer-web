@@ -38,8 +38,8 @@ export default function Home() {
           </div>
           {/* visual section */}
           <div className="w-full md:w-1/2 flex flex-col justify-center items-center space-y-4">
-            <div className="flex gap-4">
-              <div className="w-32 h-32 sm:w-52 sm:h-52 bg-red-500 rounded-full flex items-center justify-center">
+            <div className="flex justify-center gap-4">
+              <div className="w-32 h-32 md:w-40 md:h-40 lg:w-52 lg:h-52 bg-red-500 rounded-full flex items-center justify-center">
                 <div className="text-white text-center leading-6">
                   <span className="text-sm font-light">Over</span>
                   <br />
@@ -53,18 +53,18 @@ export default function Home() {
                 alt="first image"
                 width={200}
                 height={200}
-                className="rounded-lg"
+                className="w-1/3 md:w-1/2 rounded-lg"
               />
             </div>
-            <div className="flex gap-4">
+            <div className="flex justify-center gap-4">
               <Image
                 src={"/image_2.jpg"}
                 alt="first image"
                 width={200}
                 height={200}
-                className="rounded-lg"
+                className="w-1/3 md:w-1/2 rounded-lg"
               />
-              <div className="w-32 h-32 sm:w-52 sm:h-52 bg-green-500 rounded-full flex items-center justify-center">
+              <div className="w-32 h-32 md:w-40 md:h-40 lg:w-52 lg:h-52 bg-green-500 rounded-full flex items-center justify-center">
                 <p className="text-white text-center leading-6">
                   <span className="text-sm font-light">Over</span>
                   <br />
