@@ -24,7 +24,7 @@ export default function Home() {
             </p>
             <Link
               href={"/"}
-              className="flex justify-center items-center space-x-3 px-5 py-3 bg-green-500 hover:bg-green-600 transition-all duration-300 ease-in-out text-white rounded-md"
+              className="flex justify-center items-center space-x-3 px-5 py-3 bg-green-500 hover:bg-green-600 text-white rounded-md"
             >
               <p>Explore coures</p>
               <p className="">
