@@ -6,7 +6,7 @@ import { IoIosSearch } from "react-icons/io";
 
 const NavBar = () => {
   return (
-    <nav className="absolute top-0 z-50 w-full flex justify-between items-center md:py-5 md:shadow-lg shadow-gray-300">
+    <nav className="w-full flex justify-between items-center md:py-5 md:shadow-xl shadow-gray-300">
       <div className="container mx-auto md:flex hidden justify-between items-center">
         <div>
           <Link href="/">

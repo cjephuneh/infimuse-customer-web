@@ -11,7 +11,7 @@ export default function Home() {
   return (
     <main className="">
       <div className="bg-gradient-to-bl from-green-100 rounded-b-2xl">
-        <div className="min-h-screen container mx-auto flex justify-center items-center space-x-10">
+        <div className="min-h-[90vh] container mx-auto flex justify-center items-center space-x-10">
           <div className="w-1/2 flex flex-col justify-center items-start space-y-10 pt-4">
             <h1 className="text-6xl font-bold ">
               Explore. <br />
