@@ -81,20 +81,20 @@ export default function Home() {
       </div>
 
       {/* 2nd section  (classes)*/}
-      <div className="mb-10 flex justify-center items-center space-x-10 container mx-auto">
-        <div className="flex space-x-5 w-1/2">
-          <div className="flex flex-col space-y-10">
-            <div className="image-3 rounded-full w-40 h-40"></div>
-            <div className="image-6 rounded-full w-52 h-52"></div>
+      <div className="my-10 flex flex-col md:flex md:flex-row justify-center items-center md:space-x-10 container mx-auto">
+        <div className="flex space-x-2 md:space-x-5 justify-center w-full md:w-1/2">
+          <div className="flex flex-col items-end sm:items-start space-y-10">
+            <div className="image-3 rounded-full w-20 h-20 sm:w-40 sm:h-40"></div>
+            <div className="image-6 rounded-full w-32 h-32 sm:w-52 sm:h-52"></div>
           </div>
           <div className="flex flex-col space-y-5">
-            <div className="image-7 rounded-full w-20 h-20"></div>
-            <div className="image-8 rounded-full w-56 h-56"></div>
+            <div className="image-7 rounded-full w-36 h-36 sm:w-20 sm:h-20"></div>
+            <div className="image-8 rounded-full w-20 h-20 sm:w-56 sm:h-56"></div>
           </div>
         </div>
-        <div className="flex flex-col justify-center items-center space-y-5 w-1/2">
+        <div className="flex flex-col justify-center items-center space-y-5 w-full md:w-1/2">
           <h1 className="text-5xl font-bold">Classes.</h1>
-          <p className="text-xl font-light tracking-widest">
+          <p className="text-xl font-light tracking-widest text-center md:text-left w-full">
             A single day interactive, <br />
             group classes making learning <br />
             and exploring something new, <br />
