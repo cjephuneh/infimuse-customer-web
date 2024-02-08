@@ -144,34 +144,42 @@ export default function Home() {
         </div>
       </div>
       {/* 4th section (top categories) */}
-      <div className="mb-10 flex flex-col justify-center items-center space-x-10 container mx-auto space-y-5">
-        <h1 className="capitalize font-normal text-5xl text-center">
+      <div className="mb-10 flex flex-col justify-center items-center container mx-auto space-y-5">
+        <h1 className="capitalize font-semibold md:font-normal text-2xl md:text-5xl text-start md:text-center w-full md:w-fit">
           our top categories
         </h1>
-        <div className="flex justify-center items-center space-x-10">
-          <div className="flex flex-col justify-center items-start space-y-5">
-            <div className="p-5 bg-gray-100 rounded-xl">
+        <div className="flex-wrap md:flex-nowrap flex justify-start md:justify-center items-center w-full md:w-fit space-x-3 md:space-x-7">
+          <div className="flex flex-col justify-center items-center md:items-start space-y-5">
+            <div className="p-5 bg-gray-100 rounded-xl hidden md:block">
               <LuMusic className="text-9xl font-semibold" />
             </div>
-            <p className="font-bold text-2xl">Music</p>
+            <p className="hover:bg-black/10 transition-all duration-300 cursor-pointer font-bold text-2xl p-3 md:p-0 border border-black md:border-none rounded-full">
+              Music
+            </p>
           </div>
-          <div className="flex flex-col justify-center items-start space-y-5">
-            <div className="p-5 bg-gray-100 rounded-xl">
+          <div className="flex flex-col justify-center items-center md:items-start space-y-5">
+            <div className="p-5 bg-gray-100 rounded-xl hidden md:block">
               <IoIosFitness className="text-9xl" />
             </div>
-            <p className="font-bold text-2xl">Fitness</p>
+            <p className="hover:bg-black/10 transition-all duration-300 cursor-pointer font-bold text-2xl p-3 md:p-0 border border-black md:border-none rounded-full">
+              Fitness
+            </p>
           </div>
-          <div className="flex flex-col justify-center items-start space-y-5">
-            <div className="p-5 bg-gray-100 rounded-xl">
+          <div className="flex flex-col justify-center items-center md:items-start space-y-5">
+            <div className="p-5 bg-gray-100 rounded-xl hidden md:block">
               <HiOutlinePaintBrush className="text-9xl" />
             </div>
-            <p className="font-bold text-2xl">Art</p>
+            <p className="hover:bg-black/10 transition-all duration-300 cursor-pointer font-bold text-2xl p-3 md:p-0 border border-black md:border-none rounded-full">
+              Art
+            </p>
           </div>
-          <div className="flex flex-col justify-center items-start space-y-5">
-            <div className="p-5 bg-gray-100 rounded-xl">
+          <div className="flex flex-col justify-center items-center md:items-start space-y-5">
+            <div className="p-5 bg-gray-100 rounded-xl hidden md:block">
               <HiOutlineAcademicCap className="text-9xl" />
             </div>
-            <p className="font-bold text-2xl">Academics</p>
+            <p className="hover:bg-black/10 transition-all duration-300 cursor-pointer font-bold text-2xl p-3 md:p-0 border border-black md:border-none rounded-full">
+              Academics
+            </p>
           </div>
         </div>
       </div>
