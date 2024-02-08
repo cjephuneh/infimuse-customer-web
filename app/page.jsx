@@ -81,7 +81,7 @@ export default function Home() {
       </div>
 
       {/* 2nd section  (classes)*/}
-      <div className="my-10 flex flex-col md:flex md:flex-row justify-center items-center md:space-x-10 container mx-auto">
+      <div className="my-10 flex flex-col md:flex md:flex-row justify-center items-center space-y-8 md:space-y-0 md:space-x-10 container mx-auto">
         <div className="flex space-x-2 md:space-x-5 justify-center w-full md:w-1/2">
           <div className="flex flex-col items-end sm:items-start space-y-10">
             <div className="image-3 rounded-full w-20 h-20 sm:w-40 sm:h-40"></div>
@@ -94,7 +94,7 @@ export default function Home() {
         </div>
         <div className="flex flex-col justify-center items-center space-y-5 w-full md:w-1/2">
           <h1 className="text-5xl font-bold">Classes.</h1>
-          <p className="text-xl font-light tracking-widest text-center md:text-left w-full">
+          <p className="text-xl font-light tracking-widest text-center md:text-left w-full md:w-fit">
             A single day interactive, <br />
             group classes making learning <br />
             and exploring something new, <br />
@@ -105,8 +105,8 @@ export default function Home() {
       </div>
 
       {/* 3rd section (workshop & packages) */}
-      <div className="mb-10 flex flex-row-reverse justify-center items-center space-x-10 container mx-auto">
-        <div className="relative w-1/2 flex flex-col justify-center items-center space-y-3">
+      <div className="mb-10 flex flex-col md:flex-row-reverse justify-center items-center space-y-8 md:space-y-0 md:space-x-10 container mx-auto">
+        <div className="relative w-full md:w-1/2 flex flex-col justify-center pl-5 md:pl-0 items-start md:items-center space-y-3">
           <Image
             src={"/packages/image_9.jpg"}
             width={175}
@@ -114,26 +114,29 @@ export default function Home() {
             alt="image_9"
             className="rounded-xl"
           />
-          <Image
-            src={"/packages/image_10.jpg"}
-            width={175}
-            height={200}
-            alt="image_9"
-            className="rounded-xl z-10 ring-8 ring-white"
-          />
+          <div className="flex justify-center md:justify-center w-full">
+            <Image
+              src={"/packages/image_10.jpg"}
+              width={175}
+              height={200}
+              alt="image_9"
+              className="rounded-xl z-10 ring-8 ring-white"
+            />
+          </div>
           <Image
             src={"/packages/image_11.jpg"}
             width={175}
             height={200}
             alt="image_9"
-            className="absolute left-72 rounded-xl ring-8 ring-white"
+            className="hidden md:block absolute left-[50%] transform[-translate-x-1/2] sm:left-auto sm:right-0 sm:transform-none rounded-xl ring-8 ring-white"
           />
         </div>
-        <div className="flex flex-col justify-center items-start space-y-5 w-1/2">
+
+        <div className="flex flex-col justify-center items-center md:items-start space-y-5 w-full md:w-1/2">
           <h1 className="text-5xl font-bold">
             Workshops <br /> & Packages.
           </h1>
-          <p className="text-xl font-light tracking-widest">
+          <p className="text-xl text-center md:text-left font-light tracking-widest">
             Grow and develope your skillset with multiple interactive classes
             spanned over a few weeks while interacting with cool people to
             learn, grow and connect with.
