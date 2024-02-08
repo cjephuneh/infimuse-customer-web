@@ -61,7 +61,7 @@ body {
     rgb(var(--background-start-rgb));
 }
 
-.course-image {
+/* .course-image {
   background-image: url("/packages/image_10.jpg");
   background-size: cover;
   background-position: center;
@@ -69,4 +69,4 @@ body {
   width: 250px;
   height: 180px;
   border-radius: 10px;
-}
+} */

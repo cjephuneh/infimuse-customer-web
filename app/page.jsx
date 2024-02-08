@@ -153,7 +153,7 @@ export default function Home() {
             <div className="p-5 bg-gray-100 rounded-xl hidden md:block">
               <LuMusic className="text-9xl font-semibold" />
             </div>
-            <p className="hover:bg-black/10 transition-all duration-300 cursor-pointer font-bold text-2xl p-3 md:p-0 border border-black md:border-none rounded-full">
+            <p className="hover:bg-green-500/10 transition-all duration-300 cursor-pointer font-bold text-2xl p-3 md:p-0 border border-black md:border-none rounded-full">
               Music
             </p>
           </div>
@@ -161,7 +161,7 @@ export default function Home() {
             <div className="p-5 bg-gray-100 rounded-xl hidden md:block">
               <IoIosFitness className="text-9xl" />
             </div>
-            <p className="hover:bg-black/10 transition-all duration-300 cursor-pointer font-bold text-2xl p-3 md:p-0 border border-black md:border-none rounded-full">
+            <p className="hover:bg-green-500/10 transition-all duration-300 cursor-pointer font-bold text-2xl p-3 md:p-0 border border-black md:border-none rounded-full">
               Fitness
             </p>
           </div>
@@ -169,7 +169,7 @@ export default function Home() {
             <div className="p-5 bg-gray-100 rounded-xl hidden md:block">
               <HiOutlinePaintBrush className="text-9xl" />
             </div>
-            <p className="hover:bg-black/10 transition-all duration-300 cursor-pointer font-bold text-2xl p-3 md:p-0 border border-black md:border-none rounded-full">
+            <p className="hover:bg-green-500/10 transition-all duration-300 cursor-pointer font-bold text-2xl p-3 md:p-0 border border-black md:border-none rounded-full">
               Art
             </p>
           </div>
@@ -177,7 +177,7 @@ export default function Home() {
             <div className="p-5 bg-gray-100 rounded-xl hidden md:block">
               <HiOutlineAcademicCap className="text-9xl" />
             </div>
-            <p className="hover:bg-black/10 transition-all duration-300 cursor-pointer font-bold text-2xl p-3 md:p-0 border border-black md:border-none rounded-full">
+            <p className="hover:bg-green-500/10 transition-all duration-300 cursor-pointer font-bold text-2xl p-3 md:p-0 border border-black md:border-none rounded-full">
               Academics
             </p>
           </div>
