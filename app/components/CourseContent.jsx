@@ -3,7 +3,7 @@ import Lesson from "./Lesson";
 
 const CourseContent = () => {
   return (
-    <div className="w-7/12 mr-10">
+    <div className="w-8/12 mr-10">
       <div className="flex justify-between items-center">
         <h1 className="text-2xl font-bold mb-5">Course Content</h1>
         <div className="space-x-7">

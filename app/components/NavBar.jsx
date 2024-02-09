@@ -18,7 +18,7 @@ const NavBar = () => {
             <Link href="/">Become a host</Link>
           </li>
           <li>
-            <Link href="/">Packages</Link>
+            <Link href="/packages/package-slug">Packages</Link>
           </li>
           <li>
             <BsCart3 className="text-xl" />
@@ -43,7 +43,7 @@ const NavBar = () => {
           </div>
         </ul>
       </div>
-      <div className="container mx-auto flex md:hidden justify-between items-center py-5">
+      <div className="container mx-auto flex md:hidden shadow-xl justify-between items-center py-5 px-5">
         <GiHamburgerMenu />
         <div>
           <Link href="/">

@@ -3,7 +3,7 @@ import FilterSection from "../components/FilterSection";
 
 const Packages = () => {
   return (
-    <div className="mt-20">
+    <div className="mt-10">
       <FilterSection />
     </div>
   );

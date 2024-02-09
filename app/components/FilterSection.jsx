@@ -10,7 +10,7 @@ import FilterTag from "./FilterTags";
 
 const FilterSection = () => {
   return (
-    <div className=" mb-10 flex md:space-x-10 container mx-auto">
+    <div className="mb-10 flex md:space-x-10 container mx-auto">
       <div className="hidden md:flex flex-col space-y-5 w-2/12">
         <Category />
         <hr className="border border-black" />

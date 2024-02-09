@@ -8,28 +8,44 @@ import Video from "next-video";
 import React, { useState } from "react";
 import { FaRegStar, FaLongArrowAltRight } from "react-icons/fa";
 import { TiTick } from "react-icons/ti";
+import { FaStar } from "react-icons/fa6";
+import { IoBookOutline } from "react-icons/io5";
+import { PiStudentDuotone } from "react-icons/pi";
 
 const PackageDetails = () => {
   const [active, setActive] = useState("overview");
   return (
-    <div className="mt-20 container mx-auto relative">
-      <div className="background-image-detail-page w-full h-[250px] flex items-center pt-3 pb-10 rounded-t-xl">
-        <div className="w-2/3 px-5 space-y-2 text-white">
-          <h1 className="text-xl font-bold">Marketing course</h1>
-          <p>
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Velit sint
-            porro cupiditate obcaecati? Minima, delectus.
-          </p>
-          <div className="flex items-center space-x-2">
-            <FaRegStar />
-            <FaRegStar />
-            <FaRegStar />
-            <FaRegStar />
-            <FaRegStar />
-            <p>69</p>
+    <div className="relative mb-10">
+      <div className="bg-black/80 w-full h-[275px] flex items-center pt-3 pb-10">
+        <div className="container mx-auto">
+          <div className="md:w-2/3 flex flex-col space-y-4 text-white">
+            <h1 className="text-3xl font-bold">Marketing course</h1>
+            <p className="font-semibold">
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Velit
+              sint porro cupiditate obcaecati? Minima, delectus.
+            </p>
+            <div className="flex items-center space-x-2">
+              <FaStar className="text-yellow-500" />
+              <FaStar className="text-yellow-500" />
+              <FaStar className="text-yellow-500" />
+              <FaStar className="text-yellow-500" />
+              <FaRegStar />
+              <p>69</p>
+            </div>
+            <div className="flex gap-6 items-center space-x-2">
+              <div className="flex items-center space-x-2">
+                <IoBookOutline className="text-green-500" />
+                <span>100 students</span>
+              </div>
+              <div className="flex items-center space-x-2">
+                <PiStudentDuotone className="text-green-500" />
+                <span>100 students</span>
+              </div>
+            </div>
           </div>
         </div>
       </div>
+
       {/* floating card */}
       <div className="md:w-[320px] rounded-xl absolute top-14 right-14 bg-white p-5 shadow-lg">
         <Video
@@ -71,7 +87,7 @@ const PackageDetails = () => {
       {/* end of floating card */}
 
       {/* nav */}
-      <nav className="flex items-center space-x-5 mt-10 mb-5">
+      <nav className="container mx-auto flex items-center space-x-5 mt-10 mb-5">
         <button
           onClick={() => setActive("overview")}
           className={`px-5 pb-3 ${
@@ -106,10 +122,12 @@ const PackageDetails = () => {
         </button>
       </nav>
       {/* overview */}
-      {active === "overview" && <Overview />}
-      {active === "course content" && <CourseContent />}
-      {active === "host" && <Host />}
-      {active === "reviews" && <Reviews />}
+      <div className="container mx-auto">
+        {active === "overview" && <Overview />}
+        {active === "course content" && <CourseContent />}
+        {active === "host" && <Host />}
+        {active === "reviews" && <Reviews />}
+      </div>
     </div>
   );
 };
