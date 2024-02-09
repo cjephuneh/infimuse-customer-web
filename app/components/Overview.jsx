@@ -2,7 +2,7 @@ import React from "react";
 
 const Overview = () => {
   return (
-    <div className="w-8/12 space-y-8">
+    <div className="md:w-7/12 lg:w-8/12 space-y-8">
       <div className="border border-green-300 rounded-sm py-7 px-4 space-y-3">
         <h1 className="text-2xl font-semibold">Course Description</h1>
         <p>

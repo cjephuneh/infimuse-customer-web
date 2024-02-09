@@ -16,15 +16,19 @@ const PackageDetails = () => {
   const [active, setActive] = useState("overview");
   return (
     <div className="relative mb-10">
-      <div className="bg-black/80 w-full h-[275px] flex items-center pt-3 pb-10">
+      <div className="bg-black/80 w-full  flex items-center pb-7 md:py-16">
         <div className="container mx-auto">
-          <div className="md:w-2/3 flex flex-col space-y-4 text-white">
+          <div className="text-center md:text-left md:w-7/12 lg:w-2/3 flex flex-col space-y-4 text-white">
+            <Video
+              src="https://www.youtube.com/watch?v=dQw4w9WgXcQ"
+              className="block md:hidden"
+            />
             <h1 className="text-3xl font-bold">Marketing course</h1>
             <p className="font-semibold">
               Lorem ipsum dolor sit amet consectetur, adipisicing elit. Velit
               sint porro cupiditate obcaecati? Minima, delectus.
             </p>
-            <div className="flex items-center space-x-2">
+            <div className="flex justify-center md:justify-start items-center space-x-2">
               <FaStar className="text-yellow-500" />
               <FaStar className="text-yellow-500" />
               <FaStar className="text-yellow-500" />
@@ -32,22 +36,54 @@ const PackageDetails = () => {
               <FaRegStar />
               <p>69</p>
             </div>
-            <div className="flex gap-6 items-center space-x-2">
+            <div className="flex gap-6 justify-center md:justify-start items-center space-x-2">
               <div className="flex items-center space-x-2">
                 <IoBookOutline className="text-green-500" />
-                <span>100 students</span>
+                <span>25 courses</span>
               </div>
               <div className="flex items-center space-x-2">
                 <PiStudentDuotone className="text-green-500" />
                 <span>100 students</span>
               </div>
             </div>
+            <div className="block md:hidden">
+              <p className="mt-5 mb-3 font-semibold">Course format</p>
+              <ul>
+                <li className="flex justify-center md:justify-start items-start lg:items-center space-x-2">
+                  <TiTick />
+                  <span>5 video lessons</span>
+                </li>
+                <li className="flex justify-center md:justify-start items-start lg:items-center space-x-2">
+                  <TiTick />
+                  <span>4 quizes for testing your knowledge</span>
+                </li>
+                <li className="flex justify-center md:justify-start items-start lg:items-center space-x-2">
+                  <TiTick />
+                  <span>3 assignments for you to practice</span>
+                </li>
+                <li className="flex justify-center md:justify-start items-start lg:items-center space-x-2">
+                  <TiTick />
+                  <span> 1 project to showcase your skills</span>
+                </li>
+                <li className="flex justify-center md:justify-start items-start lg:items-center space-x-2">
+                  <TiTick />
+                  <span>course certificate</span>
+                </li>
+              </ul>
+            </div>
+
+            <div className="flex md:hidden  items-center justify-center mt-5">
+              <button className="flex items-center space-x-2  bg-green-500 hover:bg-green-400 text-white py-2 px-5 rounded-3xl">
+                <p>Enroll now</p>
+                <FaLongArrowAltRight />
+              </button>
+            </div>
           </div>
         </div>
       </div>
 
       {/* floating card */}
-      <div className="md:w-[320px] rounded-xl absolute top-14 right-14 bg-white p-5 shadow-lg">
+      <div className="hidden md:block md:w-[320px] rounded-xl absolute top-14 right-0 lg:right-14 bg-white p-5 shadow-lg">
         <Video
           src="https://www.youtube.com/watch?v=dQw4w9WgXcQ"
           className="rounded-xl"
@@ -56,23 +92,23 @@ const PackageDetails = () => {
         <h1 className="text-green-500 text-2xl font-bold">Ksh 10,000</h1>
         <p className="mt-5 mb-3 font-semibold">Course format</p>
         <ul>
-          <li className="flex items-center space-x-2">
+          <li className="flex items-start lg:items-center space-x-2">
             <TiTick />
             <span>5 video lessons</span>
           </li>
-          <li className="flex items-center space-x-2">
+          <li className="flex items-start lg:items-center space-x-2">
             <TiTick />
             <span>4 quizes for testing your knowledge</span>
           </li>
-          <li className="flex items-center space-x-2">
+          <li className="flex items-start lg:items-center space-x-2">
             <TiTick />
             <span>3 assignments for you to practice</span>
           </li>
-          <li className="flex items-center space-x-2">
+          <li className="flex items-start lg:items-center space-x-2">
             <TiTick />
             <span> 1 project to showcase your skills</span>
           </li>
-          <li className="flex items-center space-x-2">
+          <li className="flex items-start lg:items-center space-x-2">
             <TiTick />
             <span>course certificate</span>
           </li>
@@ -87,10 +123,10 @@ const PackageDetails = () => {
       {/* end of floating card */}
 
       {/* nav */}
-      <nav className="container mx-auto flex items-center space-x-5 mt-10 mb-5">
+      <nav className="container mx-auto flex justify-between md:justify-start items-center spac-x-0 md:space-x-3 lg:space-x-5 mt-10 mb-5">
         <button
           onClick={() => setActive("overview")}
-          className={`px-5 pb-3 ${
+          className={`px-1 md:px-3 lg:px-5 pb-3 ${
             active === "overview" && "border-green-500 border-b-2"
           }`}
         >
@@ -98,7 +134,7 @@ const PackageDetails = () => {
         </button>
         <button
           onClick={() => setActive("course content")}
-          className={`px-5 pb-3 ${
+          className={`px-1 md:px-3 lg:px-5 pb-3 ${
             active === "course content" && "border-green-500 border-b-2"
           }`}
         >
@@ -106,7 +142,7 @@ const PackageDetails = () => {
         </button>
         <button
           onClick={() => setActive("host")}
-          className={`px-5 pb-3 ${
+          className={`px-1 md:px-3 lg:px-5 pb-3 ${
             active === "host" && "border-green-500 border-b-2"
           }`}
         >
@@ -114,7 +150,7 @@ const PackageDetails = () => {
         </button>
         <button
           onClick={() => setActive("reviews")}
-          className={`px-5 pb-3 ${
+          className={`px-1 md:px-3 lg:px-5 pb-3 ${
             active === "reviews" && "border-green-500 border-b-2"
           }`}
         >
