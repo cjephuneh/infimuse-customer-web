@@ -15,10 +15,10 @@ const NavBar = () => {
         </div>
         <ul className="flex space-x-10">
           <li>
-            <Link href="/">Become a host</Link>
+            <Link href="/signup">Become a host</Link>
           </li>
           <li>
-            <Link href="/packages/package-slug">Packages</Link>
+            <Link href="/packages">Packages</Link>
           </li>
           <li>
             <BsCart3 className="text-xl" />
@@ -43,16 +43,19 @@ const NavBar = () => {
           </div>
         </ul>
       </div>
-      <div className="container mx-auto flex md:hidden shadow-xl justify-between items-center py-5 px-5">
-        <GiHamburgerMenu />
-        <div>
-          <Link href="/">
-            <h1 className="text-2xl font-bold">Infimus</h1>
-          </Link>
-        </div>
-        <div className="flex space-x-5 items-center justify-center">
-          <IoIosSearch className="text-xl" />
-          <BsCart3 className="text-xl" />
+      {/* Mobile NavBar */}
+      <div className="md:hidden shadow-xl flex w-full justify-between items-center py-5 px-5">
+        <div className="container mx-auto flex justify-between items-center">
+          <GiHamburgerMenu />
+          <div>
+            <Link href="/">
+              <h1 className="text-2xl font-bold">Infimus</h1>
+            </Link>
+          </div>
+          <div className="flex space-x-5 items-center justify-center">
+            <IoIosSearch className="text-xl" />
+            <BsCart3 className="text-xl" />
+          </div>
         </div>
       </div>
     </nav>

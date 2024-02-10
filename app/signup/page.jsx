@@ -7,8 +7,8 @@ import { FaXTwitter } from "react-icons/fa6";
 const SignUp = () => {
   return (
     <div className="flex flex-col justify-center md:flex-row md:h-screen">
-      <div className="hidden md:w-1/2 ring">visual impression</div>
-      <div className="md:w-1/2 px-20 py-10 flex flex-col justify-center">
+      {/* <div className="hidden md:w-1/2 ring">visual impression</div> */}
+      <div className="w-full lg:w-1/2 md:px-20 py-5 md:py-10 flex flex-col justify-center">
         <h1 className="text-3xl font-bold text-center  text-green-500">
           Get started
         </h1>
@@ -18,7 +18,7 @@ const SignUp = () => {
             href="/login"
             className="text-green-500 cursor-pointer hover:underline"
           >
-            Sign in
+            Log in
           </Link>
         </div>
         <form className="flex flex-col space-y-5">
@@ -38,15 +38,15 @@ const SignUp = () => {
             className="w-full px-3 py-2 mb-3 border-b  border-green-400 focus:outline-none rounded"
           />
           <div className="flex justify-center">
-            <button className="w-1/2 px-3 py-2 mb-3 bg-green-500 hover:bg-green-600 text-white rounded">
+            <button className="w-1/2 px-3 py-2 mb-3 bg-green-500 transition-all duration-300  hover:bg-green-600 text-white rounded">
               Sign Up
             </button>
           </div>
         </form>
         <div className="flex justify-center items-center space-x-5 mt-10">
-          <hr className="w-1/4 border border-gray-400/70" />
+          <hr className="w-1/5 md:w-1/4 border border-gray-400/70" />
           <span>Or sign up with</span>
-          <hr className="w-1/4 border border-gray-400/70" />
+          <hr className="w-1/5 md:w-1/4 border border-gray-400/70" />
         </div>
         <div className="flex justify-center space-x-5 text-xl mt-10">
           <span className="cursor-pointer p-3 rounded-xl shadow-xl">

@@ -6,8 +6,8 @@ import { FaXTwitter } from "react-icons/fa6";
 const Login = () => {
   return (
     <div className="flex flex-col justify-center md:flex-row md:h-screen">
-      <div className="hidden md:w-1/2 ring">visual impression</div>
-      <div className="md:w-1/2 px-20 py-10 flex flex-col justify-center">
+      {/* <div className="hidden md:w-1/2 ring">visual impression</div> */}
+      <div className="w-full lg:w-1/2 md:px-20 py-5 md:py-10 flex flex-col justify-center">
         <h1 className="text-3xl font-bold text-center  text-green-500">
           Log in
         </h1>
@@ -32,7 +32,7 @@ const Login = () => {
             className="w-full px-3 py-2 mb-3 border-b  border-green-400 focus:outline-none rounded"
           />
           <div className="flex justify-center">
-            <button className="w-1/2 px-3 py-2 mb-3 bg-green-500 hover:bg-green-600 text-white rounded">
+            <button className="w-1/2 px-3 py-2 mb-3 bg-green-500 transition-all duration-300 hover:bg-green-600 text-white rounded">
               Login
             </button>
           </div>
