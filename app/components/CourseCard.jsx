@@ -1,12 +1,17 @@
 import Image from "next/image";
+import Link from "next/link";
 import React from "react";
 import { FaStar } from "react-icons/fa";
 import { IoBookOutline } from "react-icons/io5";
 import { PiStudentDuotone } from "react-icons/pi";
+import styles from "@/app/CourseCard.module.css";
 
 const CourseCard = () => {
   return (
-    <div className="col-span-4 md:col-span-3 xl:col-span-2 flex flex-col items-center bg-white rounded-lg shadow-lg space-y-1 md:space-y-3">
+    <Link
+      href="/packages/package-slug"
+      className={`hover:cursor-pointer ${styles.card} col-span-4 md:col-span-3 xl:col-span-2 flex flex-col items-center bg-white rounded-lg shadow-md space-y-1 md:space-y-3`}
+    >
       <Image
         src={"/packages/image_10.jpg"}
         alt="course"
@@ -54,7 +59,7 @@ const CourseCard = () => {
           <p className="text-xs md:text-sm text-green-500">John Doe</p>
         </div>
       </div>
-    </div>
+    </Link>
   );
 };
 
